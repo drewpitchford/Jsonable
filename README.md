@@ -1,6 +1,3 @@
-# Jsonable
-A simple protocol that makes it easy to represent any custom object as a dictionary
-
 ## Jsonable is a Swift protocol that makes any conforming object able to be represented as a dictionary.
 
 Tired of writing `zip()`,  `toDict()`, and other such methods for every one of your models? Then Jsonable is for you! Simply have your custom object conform to Jsonable, and with a simple `json()` call, it will be converted into a dictionary.
