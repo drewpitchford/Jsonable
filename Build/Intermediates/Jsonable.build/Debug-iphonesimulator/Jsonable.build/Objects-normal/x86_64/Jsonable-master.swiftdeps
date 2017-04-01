@@ -1,8 +1,8 @@
 version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
 options: "dc44eba2c1926d0da38a3b4df13dd558"
-build_time: [544369736, 962254000]
+build_time: [544370019, 310681000]
 inputs:
   "/Workspace/jsonable/Jsonable/AppDelegate.swift": [544311916, 0]
-  "/Workspace/jsonable/Jsonable/OptionalType.swift": [544369162, 0]
+  "/Workspace/jsonable/Jsonable/OptionalType.swift": [544370019, 0]
   "/Workspace/jsonable/Jsonable/ViewController.swift": [544311916, 0]
-  "/Workspace/jsonable/Jsonable/Jsonable.swift": [544369736, 0]
+  "/Workspace/jsonable/Jsonable/Jsonable.swift": [544370019, 0]

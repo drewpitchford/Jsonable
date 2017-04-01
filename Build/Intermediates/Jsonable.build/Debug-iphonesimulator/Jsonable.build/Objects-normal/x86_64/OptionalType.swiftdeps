@@ -9,35 +9,35 @@ provides-member:
 - ["Sq", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "BooleanLiteralType"
-- "Bool"
-- !private "StringLiteralType"
-- "Optional"
 - "OptionalType"
+- !private "BooleanLiteralType"
+- "Optional"
+- "Bool"
 - !private "fatalError"
+- !private "StringLiteralType"
 depends-member:
 - !private ["Ps9AnyObject", "init"]
 - ["Sb", "deinit"]
 - !private ["Ps7CVarArg", "init"]
 - !private ["Ps10Comparable", "init"]
+- ["Ps28CustomDebugStringConvertible", "containsValue"]
 - !private ["Ps28CustomDebugStringConvertible", "fatalError"]
 - !private ["Ps28CustomDebugStringConvertible", "init"]
-- ["Ps28CustomDebugStringConvertible", "isNil"]
 - ["Ps28CustomDebugStringConvertible", "none"]
 - ["Ps28CustomDebugStringConvertible", "some"]
 - ["Ps28CustomDebugStringConvertible", "unwrap"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "init"]
+- ["Ps17CustomReflectable", "containsValue"]
 - !private ["Ps17CustomReflectable", "fatalError"]
 - !private ["Ps17CustomReflectable", "init"]
-- ["Ps17CustomReflectable", "isNil"]
 - ["Ps17CustomReflectable", "none"]
 - ["Ps17CustomReflectable", "some"]
 - ["Ps17CustomReflectable", "unwrap"]
 - !private ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps9Equatable", "init"]
 - !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- ["Ps23ExpressibleByNilLiteral", "containsValue"]
 - !private ["Ps23ExpressibleByNilLiteral", "fatalError"]
-- ["Ps23ExpressibleByNilLiteral", "isNil"]
 - ["Ps23ExpressibleByNilLiteral", "none"]
 - ["Ps23ExpressibleByNilLiteral", "some"]
 - ["Ps23ExpressibleByNilLiteral", "unwrap"]
@@ -56,15 +56,15 @@ depends-member:
 - !private ["CSo8NSString", "init"]
 - ["Os5Never", "deinit"]
 - ["Sq", "Bool"]
+- ["Sq", "containsValue"]
 - ["Sq", "deinit"]
 - !private ["Sq", "fatalError"]
-- ["Sq", "isNil"]
 - ["Sq", "none"]
 - ["Sq", "some"]
 - ["Sq", "unwrap"]
 - ["P8Jsonable12OptionalType", "Bool"]
+- ["P8Jsonable12OptionalType", "containsValue"]
 - !private ["P8Jsonable12OptionalType", "fatalError"]
-- ["P8Jsonable12OptionalType", "isNil"]
 - ["P8Jsonable12OptionalType", "none"]
 - ["P8Jsonable12OptionalType", "some"]
 - ["P8Jsonable12OptionalType", "unwrap"]
@@ -82,9 +82,9 @@ depends-member:
 - !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
 - !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
 - !private ["Ps9_Hashable", "init"]
+- ["Ps21_ObjectiveCBridgeable", "containsValue"]
 - !private ["Ps21_ObjectiveCBridgeable", "fatalError"]
 - !private ["Ps21_ObjectiveCBridgeable", "init"]
-- ["Ps21_ObjectiveCBridgeable", "isNil"]
 - ["Ps21_ObjectiveCBridgeable", "none"]
 - ["Ps21_ObjectiveCBridgeable", "some"]
 - ["Ps21_ObjectiveCBridgeable", "unwrap"]
@@ -141,4 +141,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-interface-hash: "77f75a3c6d5efac27724a79a4e14000b"
+interface-hash: "82de2c565c498daf3c42fd2804d4b943"

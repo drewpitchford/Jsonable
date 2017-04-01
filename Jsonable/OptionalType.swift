@@ -10,19 +10,19 @@ import Foundation
 
 public protocol OptionalType {
     
-    func isNil() -> Bool
+    func containsValue() -> Bool
     func unwrap() -> Any
 }
 
 extension Optional: OptionalType {
     
-    public func isNil() -> Bool {
+    public func containsValue() -> Bool {
         
         switch self {
             
-        case .none: return true
+        case .none: return false
             
-        case .some: return false
+        case .some: return true
             
         }
     }

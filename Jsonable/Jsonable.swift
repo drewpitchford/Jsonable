@@ -27,7 +27,7 @@ extension Jsonable {
             }
             else if let value = child.value as? OptionalType {
                 
-                if !value.isNil() {
+                if value.containsValue() {
                  
                     guard let jsonableValue = value.unwrap() as? Jsonable else {
                         

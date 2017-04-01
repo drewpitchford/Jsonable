@@ -8,14 +8,13 @@ provides-member:
 - ["P8Jsonable8Jsonable", "json"]
 provides-dynamic-lookup:
 depends-top-level:
+- "Jsonable"
+- "String"
 - !private "Mirror"
 - !private "OptionalType"
 - "CastingPrecedence"
-- !private "Dictionary"
 - "AssignmentPrecedence"
-- !private "!"
-- "Jsonable"
-- "String"
+- !private "Dictionary"
 depends-member:
 - !private ["Vs13AnyCollection", "Iterator"]
 - ["Vs13AnyCollection", "deinit"]
@@ -85,8 +84,8 @@ depends-member:
 - ["Vs6Mirror", "deinit"]
 - !private ["Vs6Mirror", "init"]
 - ["Sq", "deinit"]
+- !private ["P8Jsonable12OptionalType", "containsValue"]
 - ["P8Jsonable12OptionalType", "deinit"]
-- !private ["P8Jsonable12OptionalType", "isNil"]
 - !private ["P8Jsonable12OptionalType", "unwrap"]
 - !private ["Ps8Sequence", "Element"]
 - !private ["Ps8Sequence", "Index"]

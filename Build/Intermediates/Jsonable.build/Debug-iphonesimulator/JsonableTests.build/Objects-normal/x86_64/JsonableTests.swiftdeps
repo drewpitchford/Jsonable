@@ -15,20 +15,20 @@ provides-dynamic-lookup:
 - "testJsonAllParams"
 - "testJsonNils"
 depends-top-level:
-- "Jsonable"
+- "MockParent"
+- !private "XCTAssertNotNil"
 - "StringLiteralType"
 - !private "XCTAssertEqual"
-- !private "XCTFail"
-- !private "XCTAssertNil"
 - "JsonableTests"
-- !private "print"
-- "MockUser"
-- "MockParent"
-- "CastingPrecedence"
 - "XCTestCase"
-- !private "XCTAssertNotNil"
 - "String"
+- "Jsonable"
+- !private "XCTAssertNil"
+- !private "XCTFail"
+- "CastingPrecedence"
+- "MockUser"
 - "AssignmentPrecedence"
+- !private "print"
 depends-member:
 - !private ["Ps9AnyObject", "MockParent"]
 - !private ["Ps9AnyObject", "MockUser"]
