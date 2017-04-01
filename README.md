@@ -2,6 +2,15 @@
 
 Tired of writing `zip()`,  `toDict()`, and other such methods for every one of your models? Then Jsonable is for you! Simply have your custom object conform to Jsonable, and with a simple `json()` call, it will be converted into a dictionary.
 
+---
+### Install
+
+Jsonable can be installed via Cocoapods. Add the following line into your podfile:
+
+`pod Jsonable`
+
+---
+
 ### Example Usage
 
 ```swift 
