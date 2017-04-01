@@ -46,7 +46,7 @@ Pod::Spec.new do |s|
   #
 
   s.author             = { "Drew Pitchford" }
-  s.social_media_url   = "https://twitter.com/pitchd_"
+  #s.social_media_url   => { "https://twitter.com/pitchd_" }
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
