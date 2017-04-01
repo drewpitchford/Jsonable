@@ -67,6 +67,22 @@ class JsonableTests: XCTestCase {
         
         print("****Nils: \(userJson)****")
     }
+    
+    func testParse() {
+        
+        struct MockJsonable: Jsonable {
+            
+            let value = "Jsonable Value"
+        }
+        
+        let name: String? = "Optional"
+        let value = MockJsonable().parse(value: name) as? String
+        XCTAssertEqual(value, "Optional")
+        
+        let jsonableOptional: MockJsonable? = MockJsonable()
+        let jsonableDict = MockJsonable().parse(value: jsonableOptional) as? [String: Any]
+        XCTAssertEqual(jsonableDict?["value"] as? String, "Jsonable Value")
+    }
 }
 
 class MockUser: Jsonable {

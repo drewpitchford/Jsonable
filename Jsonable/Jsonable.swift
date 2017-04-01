@@ -29,13 +29,7 @@ extension Jsonable {
                 
                 if value.containsValue() {
                  
-                    guard let jsonableValue = value.unwrap() as? Jsonable else {
-                        
-                        dict[key] = value.unwrap()
-                        continue
-                    }
-                    
-                    dict[key] = jsonableValue.json()
+                    dict[key] = parse(value: value)
                 }
             }
             else {
@@ -45,5 +39,16 @@ extension Jsonable {
         }
         
         return dict
+    }
+    
+    // MARK: - Helper
+    func parse(value: OptionalType) -> Any {
+        
+        guard let jsonableValue = value.unwrap() as? Jsonable else {
+            
+            return value.unwrap()
+        }
+        
+        return jsonableValue.json()
     }
 }

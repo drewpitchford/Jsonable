@@ -6,15 +6,16 @@ provides-nominal:
 provides-member:
 - ["P8Jsonable8Jsonable", ""]
 - ["P8Jsonable8Jsonable", "json"]
+- ["P8Jsonable8Jsonable", "parse"]
 provides-dynamic-lookup:
 depends-top-level:
-- "Jsonable"
 - "String"
+- "Jsonable"
 - !private "Mirror"
-- !private "OptionalType"
-- "CastingPrecedence"
-- "AssignmentPrecedence"
+- "OptionalType"
 - !private "Dictionary"
+- "AssignmentPrecedence"
+- "CastingPrecedence"
 depends-member:
 - !private ["Vs13AnyCollection", "Iterator"]
 - ["Vs13AnyCollection", "deinit"]
@@ -75,10 +76,11 @@ depends-member:
 - !private ["Ps16IteratorProtocol", "Element"]
 - !private ["P8Jsonable8Jsonable", "Jsonable"]
 - !private ["P8Jsonable8Jsonable", "Mirror"]
-- !private ["P8Jsonable8Jsonable", "OptionalType"]
+- ["P8Jsonable8Jsonable", "OptionalType"]
 - ["P8Jsonable8Jsonable", "String"]
 - ["P8Jsonable8Jsonable", "deinit"]
 - ["P8Jsonable8Jsonable", "json"]
+- ["P8Jsonable8Jsonable", "parse"]
 - !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Vs6Mirror", "children"]
 - ["Vs6Mirror", "deinit"]
@@ -151,4 +153,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-interface-hash: "f59cce03216a13bbd452d3b5e7821dfc"
+interface-hash: "24608dec21a026df9a55f80560f8508b"
