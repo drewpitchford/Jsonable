@@ -12,24 +12,25 @@ provides-member:
 - ["C13JsonableTests8MockUser", ""]
 - ["C13JsonableTests10MockParent", ""]
 provides-dynamic-lookup:
-- "testJsonAllParams"
 - "testJsonNils"
+- "testConvertingCamelCaseToUnderscores"
 - "testParse"
+- "testJsonAllParams"
 depends-top-level:
-- "MockParent"
-- "String"
-- "CastingPrecedence"
-- "XCTestCase"
-- "AssignmentPrecedence"
-- !private "XCTAssertEqual"
-- "Jsonable"
 - !private "XCTFail"
-- !private "XCTAssertNotNil"
-- "MockUser"
-- !private "XCTAssertNil"
-- "StringLiteralType"
+- !private "XCTAssertEqual"
 - "JsonableTests"
 - !private "print"
+- "MockUser"
+- "StringLiteralType"
+- "Jsonable"
+- !private "XCTAssertNil"
+- "CastingPrecedence"
+- "AssignmentPrecedence"
+- "XCTestCase"
+- "String"
+- "MockParent"
+- !private "XCTAssertNotNil"
 depends-member:
 - !private ["Ps9AnyObject", "MockParent"]
 - !private ["Ps9AnyObject", "MockUser"]
@@ -52,6 +53,7 @@ depends-member:
 - !private ["Ps9AnyObject", "optionalProperty"]
 - ["Ps9AnyObject", "optionalPropertyString"]
 - !private ["Ps9AnyObject", "print"]
+- ["Ps9AnyObject", "testConvertingCamelCaseToUnderscores"]
 - ["Ps9AnyObject", "testJsonAllParams"]
 - ["Ps9AnyObject", "testJsonNils"]
 - ["Ps9AnyObject", "testParse"]
@@ -74,6 +76,7 @@ depends-member:
 - ["Ps7CVarArg", "optionalPropertyString"]
 - !private ["Ps7CVarArg", "print"]
 - !private ["Ps7CVarArg", "subscript"]
+- ["Ps7CVarArg", "testConvertingCamelCaseToUnderscores"]
 - ["Ps7CVarArg", "testJsonAllParams"]
 - ["Ps7CVarArg", "testJsonNils"]
 - ["Ps7CVarArg", "testParse"]
@@ -102,6 +105,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "optionalPropertyString"]
 - !private ["Ps28CustomDebugStringConvertible", "print"]
 - !private ["Ps28CustomDebugStringConvertible", "subscript"]
+- ["Ps28CustomDebugStringConvertible", "testConvertingCamelCaseToUnderscores"]
 - ["Ps28CustomDebugStringConvertible", "testJsonAllParams"]
 - ["Ps28CustomDebugStringConvertible", "testJsonNils"]
 - ["Ps28CustomDebugStringConvertible", "testParse"]
@@ -128,6 +132,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "optionalPropertyString"]
 - !private ["Ps23CustomStringConvertible", "print"]
 - !private ["Ps23CustomStringConvertible", "subscript"]
+- ["Ps23CustomStringConvertible", "testConvertingCamelCaseToUnderscores"]
 - ["Ps23CustomStringConvertible", "testJsonAllParams"]
 - ["Ps23CustomStringConvertible", "testJsonNils"]
 - ["Ps23CustomStringConvertible", "testParse"]
@@ -151,6 +156,7 @@ depends-member:
 - ["Ps9Equatable", "optionalMockParentNameString"]
 - ["Ps9Equatable", "optionalPropertyString"]
 - !private ["Ps9Equatable", "print"]
+- ["Ps9Equatable", "testConvertingCamelCaseToUnderscores"]
 - ["Ps9Equatable", "testJsonAllParams"]
 - ["Ps9Equatable", "testJsonNils"]
 - ["Ps9Equatable", "testParse"]
@@ -177,6 +183,7 @@ depends-member:
 - ["Ps8Hashable", "optionalMockParentNameString"]
 - ["Ps8Hashable", "optionalPropertyString"]
 - !private ["Ps8Hashable", "print"]
+- ["Ps8Hashable", "testConvertingCamelCaseToUnderscores"]
 - ["Ps8Hashable", "testJsonAllParams"]
 - ["Ps8Hashable", "testJsonNils"]
 - ["Ps8Hashable", "testParse"]
@@ -200,6 +207,7 @@ depends-member:
 - !private ["Ps16IteratorProtocol", "Element"]
 - !private ["P8Jsonable8Jsonable", "address"]
 - !private ["P8Jsonable8Jsonable", "init"]
+- !private ["P8Jsonable8Jsonable", "insertUnderscores"]
 - !private ["P8Jsonable8Jsonable", "json"]
 - !private ["P8Jsonable8Jsonable", "name"]
 - !private ["P8Jsonable8Jsonable", "nonOptionalParent"]
@@ -225,6 +233,7 @@ depends-member:
 - !private ["C13JsonableTests13JsonableTests", "optionalMockParentNameString"]
 - !private ["C13JsonableTests13JsonableTests", "optionalPropertyString"]
 - !private ["C13JsonableTests13JsonableTests", "print"]
+- ["C13JsonableTests13JsonableTests", "testConvertingCamelCaseToUnderscores"]
 - ["C13JsonableTests13JsonableTests", "testJsonAllParams"]
 - ["C13JsonableTests13JsonableTests", "testJsonNils"]
 - ["C13JsonableTests13JsonableTests", "testParse"]
@@ -263,6 +272,7 @@ depends-member:
 - ["CSo8NSObject", "optionalMockParentNameString"]
 - ["CSo8NSObject", "optionalPropertyString"]
 - !private ["CSo8NSObject", "print"]
+- ["CSo8NSObject", "testConvertingCamelCaseToUnderscores"]
 - ["CSo8NSObject", "testJsonAllParams"]
 - ["CSo8NSObject", "testJsonNils"]
 - ["CSo8NSObject", "testParse"]
@@ -280,6 +290,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "optionalMockParentNameString"]
 - ["PSo16NSObjectProtocol", "optionalPropertyString"]
 - !private ["PSo16NSObjectProtocol", "print"]
+- ["PSo16NSObjectProtocol", "testConvertingCamelCaseToUnderscores"]
 - ["PSo16NSObjectProtocol", "testJsonAllParams"]
 - ["PSo16NSObjectProtocol", "testJsonNils"]
 - ["PSo16NSObjectProtocol", "testParse"]
@@ -326,6 +337,7 @@ depends-member:
 - ["CSo6XCTest", "optionalMockParentNameString"]
 - ["CSo6XCTest", "optionalPropertyString"]
 - !private ["CSo6XCTest", "print"]
+- ["CSo6XCTest", "testConvertingCamelCaseToUnderscores"]
 - ["CSo6XCTest", "testJsonAllParams"]
 - ["CSo6XCTest", "testJsonNils"]
 - ["CSo6XCTest", "testParse"]
@@ -346,6 +358,7 @@ depends-member:
 - ["CSo10XCTestCase", "optionalMockParentNameString"]
 - ["CSo10XCTestCase", "optionalPropertyString"]
 - !private ["CSo10XCTestCase", "print"]
+- ["CSo10XCTestCase", "testConvertingCamelCaseToUnderscores"]
 - ["CSo10XCTestCase", "testJsonAllParams"]
 - ["CSo10XCTestCase", "testJsonNils"]
 - ["CSo10XCTestCase", "testParse"]
@@ -369,6 +382,7 @@ depends-member:
 - ["Ps9_Hashable", "optionalMockParentNameString"]
 - ["Ps9_Hashable", "optionalPropertyString"]
 - !private ["Ps9_Hashable", "print"]
+- ["Ps9_Hashable", "testConvertingCamelCaseToUnderscores"]
 - ["Ps9_Hashable", "testJsonAllParams"]
 - ["Ps9_Hashable", "testJsonNils"]
 - ["Ps9_Hashable", "testParse"]
@@ -487,4 +501,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
 - "/Workspace/jsonable/Build/Products/Debug-iphonesimulator/Jsonable.swiftmodule/x86_64.swiftmodule"
 - "/Workspace/jsonable/Jsonable/Jsonable-Bridging-Header.h"
-interface-hash: "34efdcc5e9a0cc68e09a68868a547a81"
+interface-hash: "bd9b7952ea516e461ec8d234723339c7"

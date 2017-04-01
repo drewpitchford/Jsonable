@@ -19,7 +19,8 @@ extension Jsonable {
         
         for child in otherSelf.children {
             
-            guard let key = child.label else { continue }
+            guard var key = child.label else { continue }
+            key = insertUnderscores(into: key)
             
             if let value = child.value as? Jsonable {
                 
@@ -41,7 +42,7 @@ extension Jsonable {
         return dict
     }
     
-    // MARK: - Helper
+    // MARK: - Helpers
     func parse(value: OptionalType) -> Any {
         
         guard let jsonableValue = value.unwrap() as? Jsonable else {
@@ -50,5 +51,22 @@ extension Jsonable {
         }
         
         return jsonableValue.json()
+    }
+    
+    func insertUnderscores(into aString: String) -> String {
+        
+        var newString = ""
+        
+        for character in aString.characters {
+            
+            if "A"..."Z" ~= character {
+                
+                newString.append("_")
+            }
+            
+            newString.append(character)
+        }
+        
+        return newString.lowercased()
     }
 }

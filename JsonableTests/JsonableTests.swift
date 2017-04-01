@@ -27,11 +27,11 @@ class JsonableTests: XCTestCase {
         let userJson = user.json()
         
         // test user
-        XCTAssertEqual(userJson["optionalProperty"] as? String, optionalPropertyString)
-        XCTAssertEqual(userJson["nonOptionalProperty"] as? String, nonOptionalPropertyString)
+        XCTAssertEqual(userJson["optional_property"] as? String, optionalPropertyString)
+        XCTAssertEqual(userJson["non_optional_property"] as? String, nonOptionalPropertyString)
         
         // test optional parent
-        guard let optionalParentJson = userJson["optionalParent"] as? [String: Any] else {
+        guard let optionalParentJson = userJson["optional_parent"] as? [String: Any] else {
             
             XCTFail("Failed to get parent json")
             return
@@ -41,7 +41,7 @@ class JsonableTests: XCTestCase {
         XCTAssertEqual(optionalParentJson["address"] as? String, optionalMockParentAddressString)
         
         // test non-optional parent
-        guard let nonOptionalParentJson = userJson["nonOptionalParent"] as? [String: Any] else {
+        guard let nonOptionalParentJson = userJson["non_optional_parent"] as? [String: Any] else {
          
             XCTFail("Failed to get nonOptionalParent")
             return
@@ -60,10 +60,10 @@ class JsonableTests: XCTestCase {
         let user = MockUser(optionalProperty: nil, nonOptionalProperty: nonOptionalPropertyString, optionalParent: nil, nonOptionalParent: nonOptionalParent)
         let userJson = user.json()
         
-        XCTAssertNil(userJson["optionalProperty"])
-        XCTAssertNotNil(userJson["nonOptionalProperty"])
-        XCTAssertNil(userJson["optionalParent"])
-        XCTAssertNotNil(userJson["nonOptionalParent"])
+        XCTAssertNil(userJson["optional_property"])
+        XCTAssertNotNil(userJson["non_optional_property"])
+        XCTAssertNil(userJson["optional_parent"])
+        XCTAssertNotNil(userJson["non_optional_parent"])
         
         print("****Nils: \(userJson)****")
     }
@@ -82,6 +82,15 @@ class JsonableTests: XCTestCase {
         let jsonableOptional: MockJsonable? = MockJsonable()
         let jsonableDict = MockJsonable().parse(value: jsonableOptional) as? [String: Any]
         XCTAssertEqual(jsonableDict?["value"] as? String, "Jsonable Value")
+    }
+    
+    func testConvertingCamelCaseToUnderscores() {
+        
+        struct CamelCase: Jsonable {}
+        
+        let camelCase = CamelCase()
+        let camelCaseConverted = camelCase.insertUnderscores(into: "aCamelCaseString")
+        XCTAssertEqual(camelCaseConverted, "a_camel_case_string")
     }
 }
 
