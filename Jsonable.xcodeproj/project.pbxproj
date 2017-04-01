@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		354C69BA1E900A650054C368 /* Jsonable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354C69B81E900A650054C368 /* Jsonable.swift */; };
+		354C69BB1E900A650054C368 /* OptionalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354C69B91E900A650054C368 /* OptionalType.swift */; };
 		3A8317101E8F020000DEDB57 /* JsonableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A83170F1E8F020000DEDB57 /* JsonableTests.swift */; };
-		3A83171E1E8F025800DEDB57 /* OptionalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A83171D1E8F025800DEDB57 /* OptionalType.swift */; };
-		3A8317201E8F027A00DEDB57 /* Jsonable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A83171F1E8F027A00DEDB57 /* Jsonable.swift */; };
 		3A8317221E8F036900DEDB57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8317211E8F036900DEDB57 /* AppDelegate.swift */; };
 		3A8317271E8F04E200DEDB57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A8317231E8F04E200DEDB57 /* Assets.xcassets */; };
 		3A8317281E8F04E200DEDB57 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A8317241E8F04E200DEDB57 /* LaunchScreen.storyboard */; };
@@ -28,14 +28,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		354C69B81E900A650054C368 /* Jsonable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Jsonable.swift; path = Cocoapod/Jsonable.swift; sourceTree = "<group>"; };
+		354C69B91E900A650054C368 /* OptionalType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OptionalType.swift; path = Cocoapod/OptionalType.swift; sourceTree = "<group>"; };
 		3A8316F71E8F020000DEDB57 /* Jsonable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jsonable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A8317061E8F020000DEDB57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A83170B1E8F020000DEDB57 /* JsonableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JsonableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A83170F1E8F020000DEDB57 /* JsonableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonableTests.swift; sourceTree = "<group>"; };
 		3A8317111E8F020000DEDB57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A83171C1E8F025800DEDB57 /* Jsonable-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Jsonable-Bridging-Header.h"; sourceTree = "<group>"; };
-		3A83171D1E8F025800DEDB57 /* OptionalType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionalType.swift; sourceTree = "<group>"; };
-		3A83171F1E8F027A00DEDB57 /* Jsonable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Jsonable.swift; sourceTree = "<group>"; };
 		3A8317211E8F036900DEDB57 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A8317231E8F04E200DEDB57 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A8317241E8F04E200DEDB57 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -102,8 +102,8 @@
 		3A83171B1E8F023300DEDB57 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				3A83171D1E8F025800DEDB57 /* OptionalType.swift */,
-				3A83171F1E8F027A00DEDB57 /* Jsonable.swift */,
+				354C69B81E900A650054C368 /* Jsonable.swift */,
+				354C69B91E900A650054C368 /* OptionalType.swift */,
 			);
 			name = Protocols;
 			sourceTree = "<group>";
@@ -226,10 +226,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				354C69BA1E900A650054C368 /* Jsonable.swift in Sources */,
+				354C69BB1E900A650054C368 /* OptionalType.swift in Sources */,
 				3A8317221E8F036900DEDB57 /* AppDelegate.swift in Sources */,
-				3A83171E1E8F025800DEDB57 /* OptionalType.swift in Sources */,
 				3A83172A1E8F04E200DEDB57 /* ViewController.swift in Sources */,
-				3A8317201E8F027A00DEDB57 /* Jsonable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,6 +425,7 @@
 				3A8317161E8F020000DEDB57 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3A8317171E8F020000DEDB57 /* Build configuration list for PBXNativeTarget "JsonableTests" */ = {
 			isa = XCConfigurationList;
@@ -433,6 +434,7 @@
 				3A8317191E8F020000DEDB57 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

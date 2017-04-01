@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
 
   s.name         = "Jsonable"
   s.version      = "1.0"
-  s.summary      = "A short description of Jsonable."
+  s.summary      = "Jsonable makes it easy convert your custom objects into json dictionaries."
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,9 +17,10 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
+  Jsonable converts your custom objects into appropriate json dictionaries that can be sumitted to your web server. Simply make your object conform to the Jsonable protocol and Jsonable takes care of the rest.
                    DESC
 
-  s.homepage     = "http://EXAMPLE/Jsonable"
+  s.homepage     = "https://github.com/drewpitchford/Jsonable"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -30,7 +31,7 @@ Pod::Spec.new do |s|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  s.license      = "MIT (example)"
+  s.license      = "MIT"
   # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
 
@@ -44,10 +45,8 @@ Pod::Spec.new do |s|
   #  profile URL.
   #
 
-  s.author             = { "Drew Pitchford" => "dpitchford@me.com" }
-  # Or just: s.author    = "Drew Pitchford"
-  # s.authors            = { "Drew Pitchford" => "dpitchford@me.com" }
-  # s.social_media_url   = "http://twitter.com/Drew Pitchford"
+  s.author             = { "Drew Pitchford" }
+  s.social_media_url   = "https://twitter.com/pitchd_"
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -55,7 +54,7 @@ Pod::Spec.new do |s|
   #  the deployment target. You can optionally include the target after the platform.
   #
 
-  # s.platform     = :ios
+  s.platform     = :ios
   # s.platform     = :ios, "5.0"
 
   #  When using multiple platforms
@@ -71,7 +70,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "http://EXAMPLE/Jsonable.git", :tag => "#{s.version}" }
+  s.source       = { :git => https://github.com/drewpitchford/Jsonable.git, :tag => "1.0" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -82,8 +81,8 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "Classes", "Classes/**/*.{h,m}"
-  s.exclude_files = "Classes/Exclude"
+  s.source_files  = "Jsonable/Cocoapod"
+ #s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
 
