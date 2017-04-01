@@ -10,19 +10,18 @@ provides-member:
 - ["P8Jsonable8Jsonable", "insertUnderscores"]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "StringLiteralType"
-- "OptionalType"
-- !private "ExtendedGraphemeClusterType"
-- "Bool"
-- "String"
-- !private "UnicodeScalarType"
-- "Jsonable"
-- !private "..."
-- !private "Dictionary"
-- !private "~="
-- "AssignmentPrecedence"
-- "CastingPrecedence"
 - !private "Mirror"
+- "String"
+- !private "StringLiteralType"
+- "Jsonable"
+- !private "UnicodeScalarType"
+- !private "Dictionary"
+- !private "ExtendedGraphemeClusterType"
+- "AssignmentPrecedence"
+- !private "~="
+- "OptionalType"
+- "CastingPrecedence"
+- !private "..."
 depends-member:
 - !private ["Vs13AnyCollection", "Iterator"]
 - ["Vs13AnyCollection", "deinit"]
@@ -141,7 +140,6 @@ depends-member:
 - !private ["Ps13IndexableBase", "subscript"]
 - !private ["Vs16IndexingIterator", "Element"]
 - !private ["Ps16IteratorProtocol", "Element"]
-- ["P8Jsonable8Jsonable", "Bool"]
 - !private ["P8Jsonable8Jsonable", "Jsonable"]
 - !private ["P8Jsonable8Jsonable", "Mirror"]
 - ["P8Jsonable8Jsonable", "OptionalType"]
@@ -150,8 +148,6 @@ depends-member:
 - ["P8Jsonable8Jsonable", "insertUnderscores"]
 - ["P8Jsonable8Jsonable", "json"]
 - ["P8Jsonable8Jsonable", "parse"]
-- ["P8Jsonable8Jsonable", "shouldUnderscore"]
-- ["P8Jsonable8Jsonable", ""]
 - !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps25LosslessStringConvertible", "append"]
 - !private ["Ps25LosslessStringConvertible", "characters"]
@@ -332,4 +328,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-interface-hash: "6dacc38852190c25fb5e8c5fe55402f1"
+interface-hash: "5be76f841f1c47b24e109e2b16df2858"

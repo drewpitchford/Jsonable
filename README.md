@@ -12,14 +12,6 @@ class User: Jsonable {
     var name: String
     var address: String?
 
-    /* This is required by Jsonable.
-     If true, all camel case property names 
-     will be underscored. 
-     
-     Example: 'firstName' becomes 'first_name'
-     */
-    var shouldUnderscore = true
-
     init(name: String, address: String) {
 
         self.name = name
