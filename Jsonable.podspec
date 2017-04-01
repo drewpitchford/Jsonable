@@ -46,7 +46,7 @@ Pod::Spec.new do |s|
   #
 
   s.author             = { "Drew Pitchford" }
-  #s.social_media_url   => { "https://twitter.com/pitchd_" }
+  #s.social_media_url   = {"https://twitter.com/pitchd_"}
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -70,7 +70,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => https://github.com/drewpitchford/Jsonable.git, :tag => "1.0" }
+  s.source       = { :git => "https://github.com/drewpitchford/Jsonable.git", :tag => "1.0" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
