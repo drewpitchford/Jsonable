@@ -73,6 +73,7 @@ class JsonableTests: XCTestCase {
         struct MockJsonable: Jsonable {
             
             let value = "Jsonable Value"
+            var shouldUnderscore = true
         }
         
         let name: String? = "Optional"
@@ -84,9 +85,26 @@ class JsonableTests: XCTestCase {
         XCTAssertEqual(jsonableDict?["value"] as? String, "Jsonable Value")
     }
     
+    func testShouldNotUnderscore() {
+        
+        struct MyStruct: Jsonable {
+            
+            var shouldUnderscore = false
+            
+            let propertyName = "Property name"
+        }
+        
+        let myStruct = MyStruct()
+        let json = myStruct.json()
+        XCTAssertNotNil(json["propertyName"])
+    }
+    
     func testConvertingCamelCaseToUnderscores() {
         
-        struct CamelCase: Jsonable {}
+        struct CamelCase: Jsonable {
+        
+            var shouldUnderscore = true
+        }
         
         let camelCase = CamelCase()
         let camelCaseConverted = camelCase.insertUnderscores(into: "aCamelCaseString")
@@ -101,6 +119,8 @@ class MockUser: Jsonable {
     var optionalParent: MockParent?
     var nonOptionalParent: MockParent
     
+    var shouldUnderscore = true
+    
     init(optionalProperty: String?, nonOptionalProperty: String, optionalParent: MockParent?, nonOptionalParent: MockParent) {
         
         self.optionalProperty = optionalProperty
@@ -114,6 +134,8 @@ class MockParent: Jsonable {
     
     var name: String
     var address: String?
+    
+    var shouldUnderscore = true
     
     init(name: String, address: String?) {
         

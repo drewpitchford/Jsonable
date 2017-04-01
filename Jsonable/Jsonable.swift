@@ -8,10 +8,22 @@
 
 import Foundation
 
-public protocol Jsonable {}
+/*
+ Jsonable converts your objects into a [String: Any] which can be sent to a server.
+ 
+ @property shouldUnderscore - set to true if your json key names need to follow standard Ruby var name syntax. 
+                              set to false if your json key names need to be camel cased.
+*/
+public protocol Jsonable {
+
+    var shouldUnderscore: Bool { get set }
+}
 
 extension Jsonable {
     
+    /*
+        Calling this method will return a [String: Any] using your object's property names as the keys and property values as the values. @property shouldUnderscore will affect the casing of your key names.
+    */
     public func json() -> [String: Any] {
         
         var dict: [String: Any] = [:]
@@ -20,7 +32,11 @@ extension Jsonable {
         for child in otherSelf.children {
             
             guard var key = child.label else { continue }
-            key = insertUnderscores(into: key)
+            
+            if shouldUnderscore {
+                
+                key = insertUnderscores(into: key)
+            }
             
             if let value = child.value as? Jsonable {
                 

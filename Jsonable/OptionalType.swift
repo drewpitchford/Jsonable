@@ -8,14 +8,20 @@
 
 import Foundation
 
+/*
+    OptionalType provides a way to handle optional Any type objects. This allows Jsonable to determine if an optional contains an Any object.
+ */
 public protocol OptionalType {
-    
+
     func containsValue() -> Bool
     func unwrap() -> Any
 }
 
 extension Optional: OptionalType {
     
+    /*
+        Returns whether or not the OptionalType contains a value
+    */
     public func containsValue() -> Bool {
         
         switch self {
@@ -27,6 +33,9 @@ extension Optional: OptionalType {
         }
     }
     
+    /*
+        Unwraps an OptionalType's optional value
+    */
     public func unwrap() -> Any {
         
         switch self {
