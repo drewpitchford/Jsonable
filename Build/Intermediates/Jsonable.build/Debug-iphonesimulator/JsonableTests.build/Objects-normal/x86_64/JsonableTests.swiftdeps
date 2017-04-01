@@ -1,0 +1,472 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "JsonableTests"
+- "MockUser"
+- "MockParent"
+provides-nominal:
+- "C13JsonableTests13JsonableTests"
+- "C13JsonableTests8MockUser"
+- "C13JsonableTests10MockParent"
+provides-member:
+- ["C13JsonableTests13JsonableTests", ""]
+- ["C13JsonableTests8MockUser", ""]
+- ["C13JsonableTests10MockParent", ""]
+provides-dynamic-lookup:
+- "testJsonAllParams"
+- "testJsonNils"
+depends-top-level:
+- "Jsonable"
+- "StringLiteralType"
+- !private "XCTAssertEqual"
+- !private "XCTFail"
+- !private "XCTAssertNil"
+- "JsonableTests"
+- !private "print"
+- "MockUser"
+- "MockParent"
+- "CastingPrecedence"
+- "XCTestCase"
+- !private "XCTAssertNotNil"
+- "String"
+- "AssignmentPrecedence"
+depends-member:
+- !private ["Ps9AnyObject", "MockParent"]
+- !private ["Ps9AnyObject", "MockUser"]
+- !private ["Ps9AnyObject", "XCTAssertEqual"]
+- !private ["Ps9AnyObject", "XCTAssertNil"]
+- !private ["Ps9AnyObject", "XCTAssertNotNil"]
+- !private ["Ps9AnyObject", "XCTFail"]
+- !private ["Ps9AnyObject", "address"]
+- ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "json"]
+- !private ["Ps9AnyObject", "name"]
+- ["Ps9AnyObject", "nonOptionalMockParentAddressString"]
+- ["Ps9AnyObject", "nonOptionalMockParentNameString"]
+- !private ["Ps9AnyObject", "nonOptionalParent"]
+- !private ["Ps9AnyObject", "nonOptionalProperty"]
+- ["Ps9AnyObject", "nonOptionalPropertyString"]
+- ["Ps9AnyObject", "optionalMockParentAddressString"]
+- ["Ps9AnyObject", "optionalMockParentNameString"]
+- !private ["Ps9AnyObject", "optionalParent"]
+- !private ["Ps9AnyObject", "optionalProperty"]
+- ["Ps9AnyObject", "optionalPropertyString"]
+- !private ["Ps9AnyObject", "print"]
+- ["Ps9AnyObject", "testJsonAllParams"]
+- ["Ps9AnyObject", "testJsonNils"]
+- ["Ps9AnyObject", ""]
+- !private ["Sb", "deinit"]
+- !private ["Ps7CVarArg", "Index"]
+- !private ["Ps7CVarArg", "MockParent"]
+- !private ["Ps7CVarArg", "MockUser"]
+- !private ["Ps7CVarArg", "SubSequence"]
+- !private ["Ps7CVarArg", "XCTAssertEqual"]
+- !private ["Ps7CVarArg", "XCTAssertNil"]
+- !private ["Ps7CVarArg", "XCTAssertNotNil"]
+- !private ["Ps7CVarArg", "XCTFail"]
+- ["Ps7CVarArg", "init"]
+- ["Ps7CVarArg", "nonOptionalMockParentAddressString"]
+- ["Ps7CVarArg", "nonOptionalMockParentNameString"]
+- ["Ps7CVarArg", "nonOptionalPropertyString"]
+- ["Ps7CVarArg", "optionalMockParentAddressString"]
+- ["Ps7CVarArg", "optionalMockParentNameString"]
+- ["Ps7CVarArg", "optionalPropertyString"]
+- !private ["Ps7CVarArg", "print"]
+- !private ["Ps7CVarArg", "subscript"]
+- ["Ps7CVarArg", "testJsonAllParams"]
+- ["Ps7CVarArg", "testJsonNils"]
+- ["Ps7CVarArg", ""]
+- !private ["Vs9Character", "deinit"]
+- !private ["Ps10Collection", "Index"]
+- !private ["Ps10Collection", "Iterator"]
+- !private ["Ps10Collection", "SubSequence"]
+- !private ["Ps10Collection", "_Element"]
+- !private ["Ps10Collection", "subscript"]
+- ["Ps10Comparable", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "Index"]
+- !private ["Ps28CustomDebugStringConvertible", "MockParent"]
+- !private ["Ps28CustomDebugStringConvertible", "MockUser"]
+- !private ["Ps28CustomDebugStringConvertible", "SubSequence"]
+- !private ["Ps28CustomDebugStringConvertible", "XCTAssertEqual"]
+- !private ["Ps28CustomDebugStringConvertible", "XCTAssertNil"]
+- !private ["Ps28CustomDebugStringConvertible", "XCTAssertNotNil"]
+- !private ["Ps28CustomDebugStringConvertible", "XCTFail"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- ["Ps28CustomDebugStringConvertible", "nonOptionalMockParentAddressString"]
+- ["Ps28CustomDebugStringConvertible", "nonOptionalMockParentNameString"]
+- ["Ps28CustomDebugStringConvertible", "nonOptionalPropertyString"]
+- ["Ps28CustomDebugStringConvertible", "optionalMockParentAddressString"]
+- ["Ps28CustomDebugStringConvertible", "optionalMockParentNameString"]
+- ["Ps28CustomDebugStringConvertible", "optionalPropertyString"]
+- !private ["Ps28CustomDebugStringConvertible", "print"]
+- !private ["Ps28CustomDebugStringConvertible", "subscript"]
+- ["Ps28CustomDebugStringConvertible", "testJsonAllParams"]
+- ["Ps28CustomDebugStringConvertible", "testJsonNils"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps17CustomReflectable", "Index"]
+- !private ["Ps17CustomReflectable", "SubSequence"]
+- ["Ps17CustomReflectable", "init"]
+- !private ["Ps17CustomReflectable", "subscript"]
+- !private ["Ps23CustomStringConvertible", "Index"]
+- !private ["Ps23CustomStringConvertible", "MockParent"]
+- !private ["Ps23CustomStringConvertible", "MockUser"]
+- !private ["Ps23CustomStringConvertible", "SubSequence"]
+- !private ["Ps23CustomStringConvertible", "XCTAssertEqual"]
+- !private ["Ps23CustomStringConvertible", "XCTAssertNil"]
+- !private ["Ps23CustomStringConvertible", "XCTAssertNotNil"]
+- !private ["Ps23CustomStringConvertible", "XCTFail"]
+- ["Ps23CustomStringConvertible", "init"]
+- ["Ps23CustomStringConvertible", "nonOptionalMockParentAddressString"]
+- ["Ps23CustomStringConvertible", "nonOptionalMockParentNameString"]
+- ["Ps23CustomStringConvertible", "nonOptionalPropertyString"]
+- ["Ps23CustomStringConvertible", "optionalMockParentAddressString"]
+- ["Ps23CustomStringConvertible", "optionalMockParentNameString"]
+- ["Ps23CustomStringConvertible", "optionalPropertyString"]
+- !private ["Ps23CustomStringConvertible", "print"]
+- !private ["Ps23CustomStringConvertible", "subscript"]
+- ["Ps23CustomStringConvertible", "testJsonAllParams"]
+- ["Ps23CustomStringConvertible", "testJsonNils"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["Vs10Dictionary", "Index"]
+- !private ["Vs10Dictionary", "SubSequence"]
+- ["Vs10Dictionary", "deinit"]
+- !private ["Vs10Dictionary", "subscript"]
+- !private ["Sd", "deinit"]
+- !private ["Ps9Equatable", "MockParent"]
+- !private ["Ps9Equatable", "MockUser"]
+- !private ["Ps9Equatable", "XCTAssertEqual"]
+- !private ["Ps9Equatable", "XCTAssertNil"]
+- !private ["Ps9Equatable", "XCTAssertNotNil"]
+- !private ["Ps9Equatable", "XCTFail"]
+- ["Ps9Equatable", "init"]
+- ["Ps9Equatable", "nonOptionalMockParentAddressString"]
+- ["Ps9Equatable", "nonOptionalMockParentNameString"]
+- ["Ps9Equatable", "nonOptionalPropertyString"]
+- ["Ps9Equatable", "optionalMockParentAddressString"]
+- ["Ps9Equatable", "optionalMockParentNameString"]
+- ["Ps9Equatable", "optionalPropertyString"]
+- !private ["Ps9Equatable", "print"]
+- ["Ps9Equatable", "testJsonAllParams"]
+- ["Ps9Equatable", "testJsonNils"]
+- ["Ps9Equatable", ""]
+- !private ["Ps30ExpressibleByDictionaryLiteral", "Index"]
+- !private ["Ps30ExpressibleByDictionaryLiteral", "SubSequence"]
+- !private ["Ps30ExpressibleByDictionaryLiteral", "subscript"]
+- ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- ["Ps32ExpressibleByStringInterpolation", "init"]
+- ["Ps26ExpressibleByStringLiteral", "init"]
+- ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- !private ["Sf", "deinit"]
+- !private ["Ps8Hashable", "MockParent"]
+- !private ["Ps8Hashable", "MockUser"]
+- !private ["Ps8Hashable", "XCTAssertEqual"]
+- !private ["Ps8Hashable", "XCTAssertNil"]
+- !private ["Ps8Hashable", "XCTAssertNotNil"]
+- !private ["Ps8Hashable", "XCTFail"]
+- ["Ps8Hashable", "init"]
+- ["Ps8Hashable", "nonOptionalMockParentAddressString"]
+- ["Ps8Hashable", "nonOptionalMockParentNameString"]
+- ["Ps8Hashable", "nonOptionalPropertyString"]
+- ["Ps8Hashable", "optionalMockParentAddressString"]
+- ["Ps8Hashable", "optionalMockParentNameString"]
+- ["Ps8Hashable", "optionalPropertyString"]
+- !private ["Ps8Hashable", "print"]
+- ["Ps8Hashable", "testJsonAllParams"]
+- ["Ps8Hashable", "testJsonNils"]
+- ["Ps8Hashable", ""]
+- !private ["Ps9Indexable", "Index"]
+- !private ["Ps9Indexable", "Iterator"]
+- !private ["Ps9Indexable", "SubSequence"]
+- !private ["Ps9Indexable", "_Element"]
+- !private ["Ps9Indexable", "subscript"]
+- !private ["Ps13IndexableBase", "Index"]
+- !private ["Ps13IndexableBase", "Iterator"]
+- !private ["Ps13IndexableBase", "SubSequence"]
+- !private ["Ps13IndexableBase", "_Element"]
+- !private ["Ps13IndexableBase", "subscript"]
+- !private ["Vs16IndexingIterator", "Element"]
+- !private ["Si", "deinit"]
+- !private ["Vs5Int16", "deinit"]
+- !private ["Vs5Int32", "deinit"]
+- !private ["Vs5Int64", "deinit"]
+- !private ["Vs4Int8", "deinit"]
+- !private ["Ps16IteratorProtocol", "Element"]
+- !private ["P8Jsonable8Jsonable", "address"]
+- !private ["P8Jsonable8Jsonable", "init"]
+- !private ["P8Jsonable8Jsonable", "json"]
+- !private ["P8Jsonable8Jsonable", "name"]
+- !private ["P8Jsonable8Jsonable", "nonOptionalParent"]
+- !private ["P8Jsonable8Jsonable", "nonOptionalProperty"]
+- !private ["P8Jsonable8Jsonable", "optionalParent"]
+- !private ["P8Jsonable8Jsonable", "optionalProperty"]
+- ["P8Jsonable8Jsonable", ""]
+- !private ["C13JsonableTests13JsonableTests", "MockParent"]
+- !private ["C13JsonableTests13JsonableTests", "MockUser"]
+- !private ["C13JsonableTests13JsonableTests", "String"]
+- !private ["C13JsonableTests13JsonableTests", "XCTAssertEqual"]
+- !private ["C13JsonableTests13JsonableTests", "XCTAssertNil"]
+- !private ["C13JsonableTests13JsonableTests", "XCTAssertNotNil"]
+- !private ["C13JsonableTests13JsonableTests", "XCTFail"]
+- ["C13JsonableTests13JsonableTests", "deinit"]
+- ["C13JsonableTests13JsonableTests", "init"]
+- !private ["C13JsonableTests13JsonableTests", "nonOptionalMockParentAddressString"]
+- !private ["C13JsonableTests13JsonableTests", "nonOptionalMockParentNameString"]
+- !private ["C13JsonableTests13JsonableTests", "nonOptionalPropertyString"]
+- !private ["C13JsonableTests13JsonableTests", "optionalMockParentAddressString"]
+- !private ["C13JsonableTests13JsonableTests", "optionalMockParentNameString"]
+- !private ["C13JsonableTests13JsonableTests", "optionalPropertyString"]
+- !private ["C13JsonableTests13JsonableTests", "print"]
+- ["C13JsonableTests13JsonableTests", "testJsonAllParams"]
+- ["C13JsonableTests13JsonableTests", "testJsonNils"]
+- ["Ps25LosslessStringConvertible", "init"]
+- ["Ps10MirrorPath", "init"]
+- ["C13JsonableTests10MockParent", "String"]
+- ["C13JsonableTests10MockParent", "address"]
+- ["C13JsonableTests10MockParent", "deinit"]
+- ["C13JsonableTests10MockParent", "init"]
+- ["C13JsonableTests10MockParent", "name"]
+- ["C13JsonableTests8MockUser", "MockParent"]
+- ["C13JsonableTests8MockUser", "String"]
+- ["C13JsonableTests8MockUser", "deinit"]
+- ["C13JsonableTests8MockUser", "init"]
+- !private ["C13JsonableTests8MockUser", "json"]
+- ["C13JsonableTests8MockUser", "nonOptionalParent"]
+- ["C13JsonableTests8MockUser", "nonOptionalProperty"]
+- ["C13JsonableTests8MockUser", "optionalParent"]
+- ["C13JsonableTests8MockUser", "optionalProperty"]
+- ["PSo8NSCoding", "init"]
+- ["PSo9NSCopying", "init"]
+- ["PSo16NSMutableCopying", "init"]
+- !private ["CSo8NSObject", "MockParent"]
+- !private ["CSo8NSObject", "MockUser"]
+- !private ["CSo8NSObject", "String"]
+- !private ["CSo8NSObject", "XCTAssertEqual"]
+- !private ["CSo8NSObject", "XCTAssertNil"]
+- !private ["CSo8NSObject", "XCTAssertNotNil"]
+- !private ["CSo8NSObject", "XCTFail"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "nonOptionalMockParentAddressString"]
+- ["CSo8NSObject", "nonOptionalMockParentNameString"]
+- ["CSo8NSObject", "nonOptionalPropertyString"]
+- ["CSo8NSObject", "optionalMockParentAddressString"]
+- ["CSo8NSObject", "optionalMockParentNameString"]
+- ["CSo8NSObject", "optionalPropertyString"]
+- !private ["CSo8NSObject", "print"]
+- ["CSo8NSObject", "testJsonAllParams"]
+- ["CSo8NSObject", "testJsonNils"]
+- !private ["PSo16NSObjectProtocol", "MockParent"]
+- !private ["PSo16NSObjectProtocol", "MockUser"]
+- !private ["PSo16NSObjectProtocol", "XCTAssertEqual"]
+- !private ["PSo16NSObjectProtocol", "XCTAssertNil"]
+- !private ["PSo16NSObjectProtocol", "XCTAssertNotNil"]
+- !private ["PSo16NSObjectProtocol", "XCTFail"]
+- ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "nonOptionalMockParentAddressString"]
+- ["PSo16NSObjectProtocol", "nonOptionalMockParentNameString"]
+- ["PSo16NSObjectProtocol", "nonOptionalPropertyString"]
+- ["PSo16NSObjectProtocol", "optionalMockParentAddressString"]
+- ["PSo16NSObjectProtocol", "optionalMockParentNameString"]
+- ["PSo16NSObjectProtocol", "optionalPropertyString"]
+- !private ["PSo16NSObjectProtocol", "print"]
+- ["PSo16NSObjectProtocol", "testJsonAllParams"]
+- ["PSo16NSObjectProtocol", "testJsonNils"]
+- ["PSo16NSObjectProtocol", ""]
+- ["PSo14NSSecureCoding", "init"]
+- ["CSo8NSString", "init"]
+- ["Sq", "deinit"]
+- ["V10ObjectiveC8Selector", "deinit"]
+- !private ["Ps8Sequence", "Element"]
+- !private ["Ps8Sequence", "Index"]
+- !private ["Ps8Sequence", "Iterator"]
+- !private ["Ps8Sequence", "SubSequence"]
+- !private ["Ps8Sequence", "_Element"]
+- !private ["Ps8Sequence", "subscript"]
+- !private ["Vs5Slice", "Index"]
+- !private ["Vs5Slice", "Iterator"]
+- !private ["Vs5Slice", "SubSequence"]
+- !private ["Vs5Slice", "_Element"]
+- ["Vs12StaticString", "deinit"]
+- !private ["Vs12StaticString", "init"]
+- ["SS", "deinit"]
+- ["SS", "init"]
+- ["Ps16TextOutputStream", "init"]
+- ["Ps20TextOutputStreamable", "init"]
+- ["Su", "deinit"]
+- !private ["Vs6UInt16", "deinit"]
+- !private ["Vs6UInt32", "deinit"]
+- !private ["Vs6UInt64", "deinit"]
+- !private ["Vs5UInt8", "deinit"]
+- !private ["Sc", "deinit"]
+- !private ["CSo6XCTest", "MockParent"]
+- !private ["CSo6XCTest", "MockUser"]
+- !private ["CSo6XCTest", "String"]
+- !private ["CSo6XCTest", "XCTAssertEqual"]
+- !private ["CSo6XCTest", "XCTAssertNil"]
+- !private ["CSo6XCTest", "XCTAssertNotNil"]
+- !private ["CSo6XCTest", "XCTFail"]
+- ["CSo6XCTest", "init"]
+- ["CSo6XCTest", "nonOptionalMockParentAddressString"]
+- ["CSo6XCTest", "nonOptionalMockParentNameString"]
+- ["CSo6XCTest", "nonOptionalPropertyString"]
+- ["CSo6XCTest", "optionalMockParentAddressString"]
+- ["CSo6XCTest", "optionalMockParentNameString"]
+- ["CSo6XCTest", "optionalPropertyString"]
+- !private ["CSo6XCTest", "print"]
+- ["CSo6XCTest", "testJsonAllParams"]
+- ["CSo6XCTest", "testJsonNils"]
+- !private ["CSo10XCTestCase", "MockParent"]
+- !private ["CSo10XCTestCase", "MockUser"]
+- !private ["CSo10XCTestCase", "String"]
+- !private ["CSo10XCTestCase", "XCTAssertEqual"]
+- !private ["CSo10XCTestCase", "XCTAssertNil"]
+- !private ["CSo10XCTestCase", "XCTAssertNotNil"]
+- !private ["CSo10XCTestCase", "XCTFail"]
+- ["CSo10XCTestCase", "deinit"]
+- ["CSo10XCTestCase", "init"]
+- ["CSo10XCTestCase", "nonOptionalMockParentAddressString"]
+- ["CSo10XCTestCase", "nonOptionalMockParentNameString"]
+- ["CSo10XCTestCase", "nonOptionalPropertyString"]
+- ["CSo10XCTestCase", "optionalMockParentAddressString"]
+- ["CSo10XCTestCase", "optionalMockParentNameString"]
+- ["CSo10XCTestCase", "optionalPropertyString"]
+- !private ["CSo10XCTestCase", "print"]
+- ["CSo10XCTestCase", "testJsonAllParams"]
+- ["CSo10XCTestCase", "testJsonNils"]
+- ["CSo10XCTestCase", ""]
+- ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
+- ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
+- ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- ["Ps35_HasCustomAnyHashableRepresentation", "init"]
+- !private ["Ps9_Hashable", "MockParent"]
+- !private ["Ps9_Hashable", "MockUser"]
+- !private ["Ps9_Hashable", "XCTAssertEqual"]
+- !private ["Ps9_Hashable", "XCTAssertNil"]
+- !private ["Ps9_Hashable", "XCTAssertNotNil"]
+- !private ["Ps9_Hashable", "XCTFail"]
+- ["Ps9_Hashable", "init"]
+- ["Ps9_Hashable", "nonOptionalMockParentAddressString"]
+- ["Ps9_Hashable", "nonOptionalMockParentNameString"]
+- ["Ps9_Hashable", "nonOptionalPropertyString"]
+- ["Ps9_Hashable", "optionalMockParentAddressString"]
+- ["Ps9_Hashable", "optionalMockParentNameString"]
+- ["Ps9_Hashable", "optionalPropertyString"]
+- !private ["Ps9_Hashable", "print"]
+- ["Ps9_Hashable", "testJsonAllParams"]
+- ["Ps9_Hashable", "testJsonNils"]
+- ["Ps9_Hashable", ""]
+- !private ["Ps21_ObjectiveCBridgeable", "Index"]
+- !private ["Ps21_ObjectiveCBridgeable", "SubSequence"]
+- ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "subscript"]
+depends-nominal:
+- "Ps9AnyObject"
+- !private "Sb"
+- "Ps7CVarArg"
+- !private "Vs9Character"
+- !private "Ps10Collection"
+- "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- "Ps29CustomPlaygroundQuickLookable"
+- "Ps17CustomReflectable"
+- "Ps23CustomStringConvertible"
+- "Vs10Dictionary"
+- !private "Sd"
+- "Ps9Equatable"
+- !private "Ps30ExpressibleByDictionaryLiteral"
+- "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- "Ps32ExpressibleByStringInterpolation"
+- "Ps26ExpressibleByStringLiteral"
+- "Ps33ExpressibleByUnicodeScalarLiteral"
+- !private "Sf"
+- "Ps8Hashable"
+- !private "Ps9Indexable"
+- !private "Ps13IndexableBase"
+- !private "Vs16IndexingIterator"
+- !private "Si"
+- !private "Vs5Int16"
+- !private "Vs5Int32"
+- !private "Vs5Int64"
+- !private "Vs4Int8"
+- !private "Ps16IteratorProtocol"
+- "P8Jsonable8Jsonable"
+- "C13JsonableTests13JsonableTests"
+- "Ps25LosslessStringConvertible"
+- "Ps10MirrorPath"
+- "C13JsonableTests10MockParent"
+- "C13JsonableTests8MockUser"
+- "PSo8NSCoding"
+- "PSo9NSCopying"
+- "PSo16NSMutableCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "PSo14NSSecureCoding"
+- "CSo8NSString"
+- "Sq"
+- "V10ObjectiveC8Selector"
+- !private "Ps8Sequence"
+- !private "Vs5Slice"
+- "Vs12StaticString"
+- "SS"
+- "Ps16TextOutputStream"
+- "Ps20TextOutputStreamable"
+- "Su"
+- !private "Vs6UInt16"
+- !private "Vs6UInt32"
+- !private "Vs6UInt64"
+- !private "Vs5UInt8"
+- !private "Sc"
+- "CSo6XCTest"
+- "CSo10XCTestCase"
+- "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
+- "Ps34_ExpressibleByBuiltinStringLiteral"
+- "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
+- "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- "Ps35_HasCustomAnyHashableRepresentation"
+- "Ps9_Hashable"
+- "Ps21_ObjectiveCBridgeable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/XCTest.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/XCTest.framework/Headers/XCUIRemote.h"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/XCTest.framework/Headers/XCUIKeyboardKeys.h"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/XCTest.framework/Headers/XCUIElementQuery.h"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/XCTest.framework/Headers/XCUICoordinate.h"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/XCTest.framework/Headers/XCUIDevice.h"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/XCTest.framework/Headers/XCUIElementTypeQueryProvider.h"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/XCTest.framework/Headers/XCUIElementTypes.h"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/XCTest.framework/Headers/XCUIElementAttributes.h"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/XCTest.framework/Headers/XCUIElement.h"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/XCTest.framework/Headers/XCUIApplication.h"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/XCTest.framework/Headers/XCTestSuiteRun.h"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/XCTest.framework/Headers/XCTestSuite.h"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/XCTest.framework/Headers/XCTestProbe.h"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/XCTest.framework/Headers/XCTestObservation.h"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/XCTest.framework/Headers/XCTestObservationCenter.h"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/XCTest.framework/Headers/XCTestObserver.h"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/XCTest.framework/Headers/XCTestLog.h"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/XCTest.framework/Headers/XCTestExpectation.h"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/XCTest.framework/Headers/XCTestRun.h"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/XCTest.framework/Headers/XCTestCaseRun.h"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/XCTest.framework/Headers/XCTestCase+AsynchronousTesting.h"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/XCTest.framework/Headers/XCTestCase.h"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/XCTest.framework/Headers/XCTestAssertionsImpl.h"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/XCTest.framework/Headers/XCTestAssertions.h"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/XCTest.framework/Headers/XCAbstractTest.h"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/XCTest.framework/Headers/XCTestErrors.h"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/XCTest.framework/Headers/XCTestDefines.h"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/XCTest.framework/Headers/XCTest.h"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/XCTest.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Workspace/jsonable/Build/Products/Debug-iphonesimulator/Jsonable.swiftmodule/x86_64.swiftmodule"
+- "/Workspace/jsonable/Jsonable/Jsonable-Bridging-Header.h"
+interface-hash: "48e24d8148328ce526e8ead16fba5ef8"

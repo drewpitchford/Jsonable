@@ -12,7 +12,7 @@ public protocol Jsonable {}
 
 extension Jsonable {
     
-    func json() -> [String: Any] {
+    public func json() -> [String: Any] {
         
         var dict: [String: Any] = [:]
         let otherSelf = Mirror(reflecting: self)
@@ -21,9 +21,22 @@ extension Jsonable {
             
             guard let key = child.label else { continue }
             
-            if let value = child.value as? OptionalType {
+            if let value = child.value as? Jsonable {
                 
-                dict[key] = value.unwrap()
+                dict[key] = value.json()
+            }
+            else if let value = child.value as? OptionalType {
+                
+                if !value.isNil() {
+                 
+                    guard let jsonableValue = value.unwrap() as? Jsonable else {
+                        
+                        dict[key] = value.unwrap()
+                        continue
+                    }
+                    
+                    dict[key] = jsonableValue.json()
+                }
             }
             else {
                 

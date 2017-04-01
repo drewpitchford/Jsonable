@@ -10,16 +10,62 @@ import XCTest
 @testable import Jsonable
 
 class JsonableTests: XCTestCase {
+    
+    private let optionalPropertyString = "optionalProperty"
+    private let nonOptionalPropertyString = "nonOptionalProperty"
+    private let optionalMockParentNameString = "Test Optional Parent name"
+    private let nonOptionalMockParentNameString = "Test Non-optional Parent name"
+    private let optionalMockParentAddressString = "Test Optional Parent Address"
+    private let nonOptionalMockParentAddressString = "Test Non-optional parent address"
 
-    func testJson() {
+    func testJsonAllParams() {
         
-        let user = MockUser(opt: "Hello", nonOpt: "There")
+        let optionalParent = MockParent(name: optionalMockParentNameString, address: optionalMockParentAddressString)
+        let nonOptionalParent = MockParent(name: nonOptionalMockParentNameString, address: nonOptionalMockParentAddressString)
         
-        
+        let user = MockUser(optionalProperty: optionalPropertyString, nonOptionalProperty: nonOptionalPropertyString, optionalParent: optionalParent, nonOptionalParent: nonOptionalParent)
         let userJson = user.json()
         
-        XCTAssertEqual(userJson["optionalProperty"] as? String, "Hello")
-        XCTAssertEqual(userJson["nonOptionalProperty"] as? String, "There")
+        // test user
+        XCTAssertEqual(userJson["optionalProperty"] as? String, optionalPropertyString)
+        XCTAssertEqual(userJson["nonOptionalProperty"] as? String, nonOptionalPropertyString)
+        
+        // test optional parent
+        guard let optionalParentJson = userJson["optionalParent"] as? [String: Any] else {
+            
+            XCTFail("Failed to get parent json")
+            return
+        }
+        
+        XCTAssertEqual(optionalParentJson["name"] as? String, optionalMockParentNameString)
+        XCTAssertEqual(optionalParentJson["address"] as? String, optionalMockParentAddressString)
+        
+        // test non-optional parent
+        guard let nonOptionalParentJson = userJson["nonOptionalParent"] as? [String: Any] else {
+         
+            XCTFail("Failed to get nonOptionalParent")
+            return
+        }
+        
+        XCTAssertEqual(nonOptionalParentJson["name"] as? String, nonOptionalMockParentNameString)
+        XCTAssertEqual(nonOptionalParentJson["address"] as? String, nonOptionalMockParentAddressString)
+        
+        print("****All params: \(userJson)****")
+    }
+    
+    func testJsonNils() {
+        
+        let nonOptionalParent = MockParent(name: nonOptionalMockParentNameString, address: nonOptionalMockParentAddressString)
+        
+        let user = MockUser(optionalProperty: nil, nonOptionalProperty: nonOptionalPropertyString, optionalParent: nil, nonOptionalParent: nonOptionalParent)
+        let userJson = user.json()
+        
+        XCTAssertNil(userJson["optionalProperty"])
+        XCTAssertNotNil(userJson["nonOptionalProperty"])
+        XCTAssertNil(userJson["optionalParent"])
+        XCTAssertNotNil(userJson["nonOptionalParent"])
+        
+        print("****Nils: \(userJson)****")
     }
 }
 
@@ -27,10 +73,26 @@ class MockUser: Jsonable {
     
     var optionalProperty: String?
     var nonOptionalProperty: String
+    var optionalParent: MockParent?
+    var nonOptionalParent: MockParent
     
-    init(opt: String, nonOpt: String) {
+    init(optionalProperty: String?, nonOptionalProperty: String, optionalParent: MockParent?, nonOptionalParent: MockParent) {
         
-        optionalProperty = opt
-        nonOptionalProperty = nonOpt
+        self.optionalProperty = optionalProperty
+        self.nonOptionalProperty = nonOptionalProperty
+        self.optionalParent = optionalParent
+        self.nonOptionalParent = nonOptionalParent
+    }
+}
+
+class MockParent: Jsonable {
+    
+    var name: String
+    var address: String?
+    
+    init(name: String, address: String?) {
+        
+        self.name = name
+        self.address = address
     }
 }
