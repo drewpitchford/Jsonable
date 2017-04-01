@@ -7,8 +7,8 @@ provides-member:
 - ["C8Jsonable11AppDelegate", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "UIApplicationDelegate"
 - "UIResponder"
+- "UIApplicationDelegate"
 - "AppDelegate"
 depends-member:
 - ["Ps9AnyObject", "application"]

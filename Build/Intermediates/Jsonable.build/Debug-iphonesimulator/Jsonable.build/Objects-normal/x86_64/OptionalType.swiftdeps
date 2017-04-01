@@ -9,12 +9,12 @@ provides-member:
 - ["Sq", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "Optional"
 - "OptionalType"
-- !private "fatalError"
-- "Bool"
-- !private "BooleanLiteralType"
 - !private "StringLiteralType"
+- "Optional"
+- "Bool"
+- !private "fatalError"
+- !private "BooleanLiteralType"
 depends-member:
 - !private ["Ps9AnyObject", "init"]
 - ["Sb", "deinit"]
